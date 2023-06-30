@@ -1,0 +1,93 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="/index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/link.png">
+</head>
+
+
+<body>
+
+    <div class="container"> 
+        <div class="headerCadastro">
+            <img class="imagemDoUsuario" src="img/carrinho.png" alt="Tela de Cadastro de produtos">
+            <h1>Cadastro de Produtos</h1>
+        </div>
+
+        <form class="formularioCadastroUsuario">
+            <div class="entrada">
+                <label for="nome" style="color: white;">* NOME</label>
+                <input placeholder="Insira o produto" id="nome" type="text">
+            </div>
+
+            <div class="entrada">
+                <label for="preço" style="color: white;">* PREÇO</label>
+                <input placeholder="Insira o preço" id="preço" type="number" step="0.01">
+            </div>
+
+            <div class="entrada">
+                <label for="validade" style="color: white;">* DATA DE VALIDADE</label>
+                <input placeholder="Insira a validade" id="validade" type="date">
+            </div>
+
+            <div class="entrada">
+                <label for="categoria" style="color: white;">* CATEGORIA</label>
+                <br>
+                <select id="categoria" class="entrada">
+                    <option value="0">Selecione a categoria</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Software">Software</option>
+                </select>
+            </div>
+
+            <div class="entrada">
+                <label for="virtual" style="color: white;">* VIRTUAL</label>
+                <input id="virtual" type="checkbox" step="0.01">
+            </div>
+
+            <div class="entrada">
+                <label for="situação" style="color: white;">* SITUAÇÃO</label>
+                <br>
+                <select id="situação" class="entrada">
+                    <option value="Disponível">Disponível</option>
+                    <option value="Bloqueado">Bloqueado</option>
+                </select>
+            </div>
+
+            <button id="cadastrarBtn">
+                <img src="img/cadastrar.png" alt="Cadastrar Produto">
+            </button>
+        </form>
+
+        <div class="filtroCategoria">
+            <label for="filtroCategoria" style="color: white;">Filtrar por Categoria:</label>
+            <select id="filtroCategoria" class="entrada">
+                <option value="Todos">Todos</option>
+                <option value="Hardware">Hardware</option>
+                <option value="Software">Software</option>
+            </select>
+        </div>
+
+        <table class="tabelaUsuarios">
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Data de Validade</th>
+                <th>Categoria</th>
+                <th>Virtual</th>
+                <th>Situação</th>
+                <th>Opções</th>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>
+
+
+
